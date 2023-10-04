@@ -1,0 +1,20 @@
+{
+  "name": "test",
+  "module": "index.ts",
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "type": "module",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "scripts":{
+    "clean": "rm -rf dist && echo 'Done.'",
+    "preinstall": "echo 'Installing...'",
+    "postinstall": "echo 'Done!'", 
+    "dev": "bun run --hot server.ts"
+  }
+}
